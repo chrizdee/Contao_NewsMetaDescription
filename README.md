@@ -1,6 +1,6 @@
 # Contao NewsMetaDescription
 
-This Contao module enables you to set custom meta description for news items.
+This Contao module enables you to set custom meta description and page title for news items.
 
 **2019-09-18: Added field to set a custom page/meta-title for an news article**
 
