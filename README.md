@@ -2,6 +2,8 @@
 
 This Contao module enables you to set custom meta description for news items.
 
+**2019-09-18: Added field to set a custom page/meta-title for an news article**
+
 ## Installation
 1. Copy the folder */system/modules/news_metadescription* and all it's contents into *contao_root/system/modules/*
 2. Log in to the contao backend
