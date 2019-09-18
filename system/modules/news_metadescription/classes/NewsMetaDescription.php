@@ -37,7 +37,7 @@ class NewsMetaDescription extends \Frontend
 		}
 
 		$this->import('Database');
-		$objArticle = $this->Database->prepare("SELECT meta_description FROM tl_news WHERE alias=? AND published=1")
+		$objArticle = $this->Database->prepare("SELECT meta_description, meta_title FROM tl_news WHERE alias=? AND published=1")
 									 ->limit(1)
 									 ->execute($this->Input->get('items'));
 
@@ -49,6 +49,9 @@ class NewsMetaDescription extends \Frontend
 
 		if ($objArticle->meta_description != '') {
             $objPage->description = $objArticle->meta_description;
+		}
+		if ($objArticle->meta_title != '') {
+            $objPage->pageTitle = $objArticle->meta_title;
 		}
 
 	}
